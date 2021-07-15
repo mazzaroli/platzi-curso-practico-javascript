@@ -39,7 +39,8 @@ console.group("Triangulos")
     function alturaTriangulo(lado1,lado2, base){
         const teoremaPitagoras = Math.sqrt(lado1**2 - ((base/2) ** 2));
         const isoceles = lado1 === lado2 && base < lado1 + lado2 ? true : false;
-        return altura = isoceles === true?  teoremaPitagoras : "revisa que los lados sean iguales, y la base menor a la suma de los lados";
+        const altura = isoceles === true?  teoremaPitagoras : "revisa que los lados sean iguales, y la base menor a la suma de los lados";
+        return altura;
     }
     console.log(alturaTriangulo)
 
